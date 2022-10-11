@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Education Background",
+    "avatar": "🎓",
+    "color": "#dfe6e9"
+  },
+  {
+    "id": 2,
+    "title": "Work Experience",
+    "avatar": "👨‍💻",
+    "color": "#dfe6e9"
+  },
+  {
+    "id": 3,
+    "title": "Career Summary",
+    "avatar": "📋",
+    "color": "#dfe6e9"
+  },
+  {
+    "id": 4,
+    "title": "Core Skills",
+    "avatar": "🥷🏻",
+    "color": "#dfe6e9"
+  },
+  {
+    "id": 5,
+    "title": "Specialization",
+    "avatar": "🔥",
+    "color": "#dfe6e9"
+  },
+  {
+    "id": 6,
+    "title": "Contact Information",
+    "avatar": "☎️",
+    "color": "#dfe6e9"
+  }
+]
