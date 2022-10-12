@@ -5,6 +5,7 @@ import {
   AiFillGithub,
   AiFillPlusCircle,
 } from "react-icons/ai";
+import ava from "../assets/avatar.png";
 
 const Profile = () => {
   const BTN_SOCMED =
@@ -15,33 +16,33 @@ const Profile = () => {
       <div className="flex items-center">
         <div className="relative flex flex-col bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full cursor-pointer">
           <a className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900">
-            <img
-              src="../public/avatar.png"
-              className="w-20 h-20 sm:w-28 sm:h-28"
-              alt="avatar"
-            />
+            <img src={ava} className="w-20 h-20 sm:w-28 sm:h-28" alt="avatar" />
           </a>
           <button className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900">
             <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-2xl sm:text-4xl" />
           </button>
         </div>
         <div className="ml-2 sm:ml-8 flex">
-          <div className="w-20 text-center">
-            <h4 className="font-pacifico text-2xl">9/10</h4>
-            <p className="font-pacifico text-md">Skills</p>
+          <div className="w-16 sm:w-20 text-center">
+            <h4 className="text-md sm:text-xl">9/10</h4>
+            <p className="text-xs sm:text-md">Skills</p>
           </div>
-          <div className="w-20 text-center">
-            <h4 className="font-pacifico text-2xl">8/10</h4>
-            <p className="font-pacifico text-md">Work</p>
+          <div className="w-16 sm:w-20 text-center">
+            <h4 className="text-md sm:text-xl">8/10</h4>
+            <p className="text-xs sm:text-md">Work</p>
           </div>
-          <div className="w-28 text-center">
-            <h4 className="font-pacifico text-2xl">8.5/10</h4>
-            <p className="font-pacifico text-md">Communication</p>
+          <div className="w-24 sm:w-28 text-center">
+            <h4 className="text-md sm:text-xl">8.5/10</h4>
+            <p className="text-xs sm:text-md">Communication</p>
           </div>
         </div>
       </div>
-      <h2 className="pt-3 font-pacifico font-light text-3xl">Panji Gumelar</h2>
-      <h3 className="pt-1 text-md text-gray-400">Software Engineer</h3>
+      <h2 className="pt-3 font-pacifico font-light text-2xl sm:text-3xl">
+        Panji Gumelar
+      </h2>
+      <h3 className="pt-1 text-sm sm:text-md text-gray-400">
+        Software Engineer
+      </h3>
       <p className="pt-1 text-xs">
         Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit...
