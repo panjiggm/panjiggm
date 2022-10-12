@@ -9,6 +9,8 @@ const Stories = () => {
   const [showRight, setShowRight] = useState(true);
 
   const handleScroll = () => {
+    if (storiesRef.current === null) return;
+
     if (storiesRef.current.scrollLeft > 0) {
       setShowLeft(true);
     } else {
@@ -46,8 +48,10 @@ const Stories = () => {
       <div className="absolute top-0 p-4 w-full h-full flex justify-between items-center z-10">
         <button
           onClick={() =>
-            (storiesRef.current.scrollLeft =
-              storiesRef.current.scrollLeft - 300)
+            storiesRef.current !== null
+              ? (storiesRef.current.scrollLeft =
+                  storiesRef.current.scrollLeft - 300)
+              : null
           }
         >
           <HiArrowCircleLeft
@@ -58,8 +62,10 @@ const Stories = () => {
         </button>
         <button
           onClick={() =>
-            (storiesRef.current.scrollLeft =
-              storiesRef.current.scrollLeft + 300)
+            storiesRef.current !== null
+              ? (storiesRef.current.scrollLeft =
+                  storiesRef.current.scrollLeft + 300)
+              : null
           }
         >
           <HiArrowCircleRight
