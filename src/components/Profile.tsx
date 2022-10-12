@@ -17,16 +17,15 @@ const Profile = () => {
           <a className="bg-white p-1 rounded-full transform transition hover:-rotate-6">
             <img
               src="../public/avatar.png"
-              width={100}
-              height={100}
+              className="w-20 h-20 sm:w-28 sm:h-28"
               alt="avatar"
             />
           </a>
-          <button className="absolute bottom-0 right-0 bg-white rounded-full">
-            <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-4xl" />
+          <button className="absolute bottom-0 right-1 bg-white rounded-full">
+            <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-2xl sm:text-4xl" />
           </button>
         </div>
-        <div className="ml-8 flex">
+        <div className="ml-2 sm:ml-8 flex">
           <div className="w-20 text-center">
             <h4 className="font-pacifico text-2xl">9/10</h4>
             <p className="font-pacifico text-md">Skills</p>
@@ -50,19 +49,19 @@ const Profile = () => {
       <div className="my-4 flex justify-between gap-1">
         <a className={`${BTN_SOCMED} bg-blue-500 hover:bg-blue-400`}>
           <AiFillLinkedin />
-          <p className="pl-1 text-sm">LinkedIn</p>
+          <p className="pl-1 text-xs sm:text-sm">LinkedIn</p>
         </a>
         <a className={`${BTN_SOCMED} bg-pink-600 hover:bg-pink-500`}>
           <AiFillInstagram />
-          <p className="pl-1 text-sm">Instagram</p>
+          <p className="pl-1 text-xs sm:text-sm">Instagram</p>
         </a>
         <a className={`${BTN_SOCMED} bg-sky-500 hover:bg-sky-400`}>
           <AiFillTwitterCircle />
-          <p className="pl-1 text-sm">Twitter</p>
+          <p className="pl-1 text-xs sm:text-sm">Twitter</p>
         </a>
         <a className={`${BTN_SOCMED} bg-gray-800 hover:bg-gray-700`}>
           <AiFillGithub />
-          <p className="pl-1 text-sm">GitHub</p>
+          <p className="pl-1 text-xs sm:text-sm">GitHub</p>
         </a>
       </div>
     </div>

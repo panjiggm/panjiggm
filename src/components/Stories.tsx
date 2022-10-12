@@ -4,7 +4,7 @@ import stories from "../data/stories.json";
 import Story from "./Story";
 
 const Stories = () => {
-  const storiesRef = useRef<number | null>(null);
+  const storiesRef = useRef<HTMLDivElement | null>(null);
   const [showLeft, setShowLeft] = useState(false);
   const [showRight, setShowRight] = useState(true);
 
@@ -28,7 +28,7 @@ const Stories = () => {
   return (
     <div className="relative">
       <div
-        className="flex space-x-2 overflow-x-scroll max-w-xl border-gray-200 p-4 scroll-smooth scrollbar-hide"
+        className="flex space-x-5 overflow-x-scroll max-w-xl border-gray-200 p-4 scroll-smooth scrollbar-hide"
         onScroll={handleScroll}
         ref={storiesRef}
       >
