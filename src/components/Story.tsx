@@ -8,7 +8,7 @@ const Story = ({ title, avatar, color }: StoryProps) => {
   return (
     <div className="flex flex-col items-center space-y-1">
       <div className="p-0.5 bg-gray-300 rounded-full cursor-pointer">
-        <div className="p-1 bg-white rounded-full">
+        <div className="p-1 bg-white rounded-full dark:bg-gray-900">
           <div
             className="h-16 w-16 text-2xl rounded-full flex justify-center items-center"
             style={{ backgroundColor: color }}
@@ -18,7 +18,9 @@ const Story = ({ title, avatar, color }: StoryProps) => {
         </div>
       </div>
 
-      <p className="text-xs w-16 text-center truncate">{title}</p>
+      <p className="text-xs w-16 text-center truncate dark:text-white">
+        {title}
+      </p>
     </div>
   );
 };

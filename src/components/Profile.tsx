@@ -11,17 +11,17 @@ const Profile = () => {
     "flex items-center justify-center rounded-lg w-full text-white py-2 cursor-pointer";
 
   return (
-    <div>
+    <div className="dark:text-white">
       <div className="flex items-center">
         <div className="relative flex flex-col bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full cursor-pointer">
-          <a className="bg-white p-1 rounded-full transform transition hover:-rotate-6">
+          <a className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900">
             <img
               src="../public/avatar.png"
               className="w-20 h-20 sm:w-28 sm:h-28"
               alt="avatar"
             />
           </a>
-          <button className="absolute bottom-0 right-1 bg-white rounded-full">
+          <button className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900">
             <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-2xl sm:text-4xl" />
           </button>
         </div>
@@ -41,7 +41,7 @@ const Profile = () => {
         </div>
       </div>
       <h2 className="pt-3 font-pacifico font-light text-3xl">Panji Gumelar</h2>
-      <h3 className="pt-1 text-md">Software Engineer</h3>
+      <h3 className="pt-1 text-md text-gray-400">Software Engineer</h3>
       <p className="pt-1 text-xs">
         Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
         consectetur, adipisci velit...
@@ -59,7 +59,7 @@ const Profile = () => {
           <AiFillTwitterCircle />
           <p className="pl-1 text-xs sm:text-sm">Twitter</p>
         </a>
-        <a className={`${BTN_SOCMED} bg-gray-800 hover:bg-gray-700`}>
+        <a className={`${BTN_SOCMED} bg-gray-700 hover:bg-gray-600`}>
           <AiFillGithub />
           <p className="pl-1 text-xs sm:text-sm">GitHub</p>
         </a>
