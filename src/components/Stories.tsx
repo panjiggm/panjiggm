@@ -3,7 +3,7 @@ import Story from "./Story";
 
 const Stories = () => {
   return (
-    <div className="flex space-x-5 overflow-x-scroll max-w-xl border-gray-200 scroll-smooth scrollbar-hide">
+    <div className="flex space-x-5 overflow-x-scroll max-w-xl border-gray-200 scroll-smooth">
       {stories.map((story) => {
         return (
           <Story

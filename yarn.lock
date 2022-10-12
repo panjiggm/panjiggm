@@ -1041,11 +1041,6 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-tailwind-scroll-behavior@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/tailwind-scroll-behavior/-/tailwind-scroll-behavior-1.0.0.tgz#bdd039e0c4b0d4b8ab634ede021de2a058620d67"
-  integrity sha512-0Tu+XQZUf4Cla53p3Yb1247SsoJcU4/5a5bs6SmrkXdsQn8rcuIc6gb5k2UFrIo2/nvmTjKplF4AHQcfEwCCNQ==
-
 tailwind-scrollbar-hide@^1.1.7:
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/tailwind-scrollbar-hide/-/tailwind-scrollbar-hide-1.1.7.tgz#90b481fb2e204030e3919427416650c54f56f847"
