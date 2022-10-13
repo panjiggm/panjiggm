@@ -7,6 +7,11 @@ import {
 } from "react-icons/ai";
 import ava from "../assets/avatar.png";
 
+const LINK_LINKEDIN = `https://www.linkedin.com/in/panjiggm/`;
+const LINK_INSTAGRAM = `https://instagram.com/panjiggm`;
+const LINK_TWITTER = `https://twitter.com/panjiggm`;
+const LINK_GITHUB = `https://github.com/panjiggm`;
+
 const Profile = () => {
   const BTN_SOCMED =
     "flex items-center justify-center rounded-lg w-full text-white py-2 cursor-pointer";
@@ -48,19 +53,35 @@ const Profile = () => {
         consectetur, adipisci velit...
       </p>
       <div className="my-4 flex justify-between gap-1">
-        <a className={`${BTN_SOCMED} bg-blue-500 hover:bg-blue-400`}>
+        <a
+          href={LINK_LINKEDIN}
+          target="_blank_"
+          className={`${BTN_SOCMED} bg-blue-500 hover:bg-blue-400`}
+        >
           <AiFillLinkedin />
           <p className="pl-1 text-xs sm:text-sm">LinkedIn</p>
         </a>
-        <a className={`${BTN_SOCMED} bg-pink-600 hover:bg-pink-500`}>
+        <a
+          href={LINK_INSTAGRAM}
+          target="_blank_"
+          className={`${BTN_SOCMED} bg-pink-600 hover:bg-pink-500`}
+        >
           <AiFillInstagram />
           <p className="pl-1 text-xs sm:text-sm">Instagram</p>
         </a>
-        <a className={`${BTN_SOCMED} bg-sky-500 hover:bg-sky-400`}>
+        <a
+          href={LINK_TWITTER}
+          target="_blank_"
+          className={`${BTN_SOCMED} bg-sky-500 hover:bg-sky-400`}
+        >
           <AiFillTwitterCircle />
           <p className="pl-1 text-xs sm:text-sm">Twitter</p>
         </a>
-        <a className={`${BTN_SOCMED} bg-gray-700 hover:bg-gray-600`}>
+        <a
+          href={LINK_GITHUB}
+          target="_blank_"
+          className={`${BTN_SOCMED} bg-gray-700 hover:bg-gray-600`}
+        >
           <AiFillGithub />
           <p className="pl-1 text-xs sm:text-sm">GitHub</p>
         </a>
