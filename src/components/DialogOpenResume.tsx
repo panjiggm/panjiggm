@@ -1,5 +1,7 @@
 import { useContext, Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
+import { HiOutlineEye, HiOutlineEyeOff } from "react-icons/hi";
+
 import { GlobalContext } from "../context/GlobalContext";
 
 const PASSWORD: string = import.meta.env.VITE_RESUME_PASSWORD;
@@ -8,6 +10,7 @@ const DialogOpenResume = () => {
   const { openResume, setOpenResume } = useContext(GlobalContext);
   const [message, setMessage] = useState("");
   const [inputPassword, setInputPassword] = useState("");
+  const [visible, setVisible] = useState(false);
 
   const handleDownload = () => {
     if (inputPassword === PASSWORD) {
@@ -20,7 +23,7 @@ const DialogOpenResume = () => {
       setMessage("");
       setOpenResume(false);
     } else {
-      setMessage("Password is not Valid!");
+      setMessage("Password is Not Valid!");
     }
   };
 
@@ -79,14 +82,26 @@ const DialogOpenResume = () => {
                       >
                         Insert password
                       </label>
-                      <input
-                        type="password"
-                        name="password"
-                        value={inputPassword}
-                        onChange={(e) => setInputPassword(e.target.value)}
-                        autoComplete="given-name"
-                        className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-gray-500 focus:ring-gray-500 sm:text-sm"
-                      />
+                      <div className="mt-1 flex rounded-md shadow-sm">
+                        <input
+                          type={visible ? "text" : "password"}
+                          name="password"
+                          value={inputPassword}
+                          onChange={(e) => setInputPassword(e.target.value)}
+                          autoComplete="given-name"
+                          className="block w-full flex-1 rounded-none rounded-l-md border-gray-300 focus:border-gray-500 focus:ring-gray-500 sm:text-sm"
+                        />
+                        <button
+                          className="inline-flex items-center rounded-r-md border border-l-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+                          onClick={() => setVisible((prev) => !prev)}
+                        >
+                          {visible ? (
+                            <HiOutlineEye className="text-lg" />
+                          ) : (
+                            <HiOutlineEyeOff className="text-lg" />
+                          )}
+                        </button>
+                      </div>
                       {message !== "" && (
                         <span className="text-xs text-red-700">{message}</span>
                       )}
