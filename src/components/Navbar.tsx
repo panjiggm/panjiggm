@@ -3,7 +3,11 @@ import { BsFillMoonStarsFill } from "react-icons/bs";
 import { GlobalContext } from "../context/GlobalContext";
 
 const Navbar = () => {
-  const { darkMode, setDarkMode } = useContext(GlobalContext);
+  const { darkMode, setDarkMode, setOpenResume } = useContext(GlobalContext);
+
+  const handleOpenResume = () => {
+    setOpenResume(true);
+  };
 
   return (
     <nav className="py-10 flex justify-between">
@@ -15,13 +19,11 @@ const Navbar = () => {
             onClick={() => setDarkMode(!darkMode)}
           />
         </li>
-        <li>
-          <a
-            href="#"
-            className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-          >
-            Resume
-          </a>
+        <li
+          className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8 cursor-pointer"
+          onClick={handleOpenResume}
+        >
+          Resume
         </li>
       </ul>
     </nav>

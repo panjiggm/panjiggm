@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
+import DialogOpenResume from "./DialogOpenResume";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Stories from "./Stories";
@@ -14,6 +15,8 @@ const Home = () => {
           <Navbar />
           <Profile />
           <Stories />
+
+          <DialogOpenResume />
         </section>
       </main>
     </div>
