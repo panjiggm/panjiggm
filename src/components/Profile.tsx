@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import {
   AiFillTwitterCircle,
   AiFillInstagram,
@@ -5,7 +6,9 @@ import {
   AiFillGithub,
   AiFillPlusCircle,
 } from "react-icons/ai";
+
 import ava from "../assets/avatar.png";
+import { GlobalContext } from "../context/GlobalContext";
 
 const LINK_LINKEDIN = `https://www.linkedin.com/in/panjiggm/`;
 const LINK_INSTAGRAM = `https://instagram.com/panjiggm`;
@@ -13,6 +16,8 @@ const LINK_TWITTER = `https://twitter.com/panjiggm`;
 const LINK_GITHUB = `https://github.com/panjiggm`;
 
 const Profile = () => {
+  const { setOpenProfileStory } = useContext(GlobalContext);
+
   const BTN_SOCMED =
     "flex items-center justify-center rounded-lg w-full text-white py-2 cursor-pointer";
 
@@ -20,7 +25,10 @@ const Profile = () => {
     <div className="dark:text-white">
       <div className="flex items-center">
         <div className="relative flex flex-col bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full cursor-pointer">
-          <a className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900">
+          <a
+            onClick={() => setOpenProfileStory(true)}
+            className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900"
+          >
             <img src={ava} className="w-20 h-20 sm:w-28 sm:h-28" alt="avatar" />
           </a>
           <button className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900">
