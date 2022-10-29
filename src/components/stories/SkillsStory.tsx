@@ -7,24 +7,44 @@ const stories = [
   {
     content: () => {
       return (
-        <div className="px-6 flex flex-col justify-center items-center w-full h-full bg-gradient-to-bl from-teal-400 to-violet-600">
-          <h1 className="font-pacifico text-6xl text-white underline">
-            Skills!
-          </h1>
+        <div className="px-6 flex flex-col justify-center w-full h-full bg-white dark:bg-gray-900">
+          <div className="text-center text-6xl">🥷🏻</div>
+          <div>
+            <h1 className="mt-8 text-3xl text-gray-600 dark:text-white">
+              Key Competencies
+            </h1>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              Javascript ES6+
+            </h3>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              React/React Native (mostly React)
+            </h3>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              Typescript
+            </h3>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              JAM Stack & Databases
+            </h3>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              Basic REST API(s) using NodeJS
+            </h3>
+          </div>
         </div>
       );
     },
+    duration: 5000,
   },
   {
     content: () => {
       return (
-        <div className="px-6 flex flex-col justify-center items-center w-full h-full bg-gradient-to-bl from-teal-400 to-violet-600">
-          <h1 className="font-pacifico text-6xl text-white underline">
-            Skills! 2
+        <div className="p-6 flex flex-col justify-center items-center w-full h-full bg-white dark:bg-gray-900">
+          <h1 className="mt-6 text-2xl text-gray-700 dark:text-white">
+            See more on my Resume
           </h1>
         </div>
       );
     },
+    duration: 2000,
   },
 ];
 

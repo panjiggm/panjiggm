@@ -24,7 +24,7 @@ const Story = ({ title, avatar, color }: StoryProps) => {
       case "Work Experience":
         setOpenWorkExpStory(true);
         break;
-      case "Career Summary":
+      case "Overview":
         setOpenCareerStory(true);
         break;
       case "Core Skills":

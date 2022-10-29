@@ -7,38 +7,46 @@ const stories = [
   {
     content: () => {
       return (
-        <div className="p-6 flex flex-col justify-center w-full h-full bg-gradient-to-br to-lime-400 from-green-700">
-          <h1 className="mt-6 text-4xl text-white">🎓 Frontend Developer</h1>
-          <h3 className="mt-4 text-lg text-yellow-100">
-            Creative Communication and Innovative Technology (CCIT) | Oct 2018
-          </h3>
+        <div className="p-6 flex flex-col justify-center w-full h-full bg-white dark:bg-gray-900">
+          <div className="text-center text-6xl">🧑🏻‍💻</div>
+          <div>
+            <h1 className="mt-8 text-3xl text-gray-600 dark:text-white">
+              Frontend Developer
+            </h1>
+            <h3 className="text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              Performate.id | 2020 - 2022
+            </h3>
+
+            <h1 className="mt-8 text-3xl text-gray-600 dark:text-white">
+              Software Engineer
+            </h1>
+            <h3 className="text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              NextByte.co | Apr 2019 - Jan 2020
+            </h3>
+
+            <h1 className="mt-8 text-3xl text-gray-600 dark:text-white">
+              Software Developer
+            </h1>
+            <h3 className="text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              PT. Next Transformtech Indonesia (NEXT TI) | Feb 2019 - Jun 2019
+            </h3>
+          </div>
         </div>
       );
     },
+    duration: 5000,
   },
   {
     content: () => {
       return (
-        <div className="p-6 flex flex-col justify-center w-full h-full bg-gradient-to-br to-amber-200 from-green-700">
-          <h1 className="mt-6 text-4xl text-white">🏫 SMK Al-Fattah</h1>
-          <h3 className="mt-4 text-lg text-emerald-800">
-            Technical Computer & Networking | 2010 - 2013
-          </h3>
+        <div className="p-6 flex flex-col justify-center items-center w-full h-full bg-white dark:bg-gray-900">
+          <h1 className="mt-6 text-2xl text-gray-700 dark:text-white">
+            See more on my Resume
+          </h1>
         </div>
       );
     },
-  },
-  {
-    content: () => {
-      return (
-        <div className="p-6 flex flex-col justify-center w-full h-full bg-gradient-to-br to-lime-400 from-green-700">
-          <h1 className="mt-6 text-4xl text-white">🎓 Raharja University</h1>
-          <h3 className="mt-4 text-lg text-yellow-100">
-            Creative Communication and Innovative Technology (CCIT) | Oct 2018
-          </h3>
-        </div>
-      );
-    },
+    duration: 2000,
   },
 ];
 
