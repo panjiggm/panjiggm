@@ -19,17 +19,17 @@ const stories = [
         </div>
       );
     },
+    duration: 5000,
   },
   {
     content: () => {
       return (
-        <div className="px-6 flex flex-col justify-center items-center w-full h-full bg-gradient-to-bl from-teal-400 to-violet-600">
-          <h1 className="font-pacifico text-6xl text-white underline">
-            Thank You!
-          </h1>
+        <div className="px-6 flex flex-col justify-center items-center w-full h-full bg-gradient-to-bl from-lime-400 to-violet-600">
+          <h1 className="font-pacifico text-6xl text-white">Thank You!</h1>
         </div>
       );
     },
+    duration: 2000,
   },
 ];
 

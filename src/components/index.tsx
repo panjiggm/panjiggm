@@ -6,6 +6,7 @@ import DialogOpenResume from "./DialogOpenResume";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Stories from "./Stories";
+import Posts from "./Posts";
 
 import ProfileStory from "./stories/ProfileStory";
 import EducationStory from "./stories/EducationStory";
@@ -55,9 +56,11 @@ const Home = () => {
           <Navbar />
           <Profile />
           <Stories />
+          <Posts />
 
           <DialogOpenResume />
         </section>
+        {/* =================== Main App =================== */}
 
         {/* =================== Stories =================== */}
         <div
@@ -102,6 +105,7 @@ const Home = () => {
         >
           <ContactStory />
         </div>
+        {/* =================== Stories =================== */}
       </main>
     </div>
   );
