@@ -11,7 +11,9 @@ const Navbar = () => {
 
   return (
     <nav className="py-10 flex justify-between">
-      <h1 className="text-xl font-pacifico dark:text-white">@panjiggm</h1>
+      <h1 className="text-xl font-pacifico text-gray-700 dark:text-white">
+        @panjiggm
+      </h1>
       <ul className="flex items-center">
         <li>
           <BsFillMoonStarsFill

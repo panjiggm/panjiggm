@@ -50,15 +50,15 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <h2 className="pt-3 font-pacifico font-light text-2xl sm:text-3xl">
-        Panji Gumelar
-      </h2>
-      <h3 className="pt-1 text-sm sm:text-md text-gray-400">
-        Software Engineer
-      </h3>
+      <div className="pt-3">
+        <h2 className="font-pacifico text-gray-700 dark:text-white font-light text-xl sm:text-2xl">
+          Panji Gumelar
+        </h2>
+        <h3 className="text-sm sm:text-md text-gray-400">Software Engineer</h3>
+      </div>
       <p className="pt-1 text-xs">
-        Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,
-        consectetur, adipisci velit...
+        A software engineer based in Tangerang, Indonesia. below are some
+        websites that I have worked on, check the posts ⬇️
       </p>
       <div className="my-4 flex justify-between gap-1">
         <a
