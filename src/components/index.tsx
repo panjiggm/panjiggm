@@ -2,11 +2,13 @@ import { useContext } from "react";
 import { GlobalContext } from "../context/GlobalContext";
 
 // Import Components
-import DialogOpenResume from "./DialogOpenResume";
 import Navbar from "./Navbar";
 import Profile from "./Profile";
 import Stories from "./Stories";
 import Posts from "./Posts";
+
+import DialogOpenResume from "./DialogOpenResume";
+import DialogPostDetail from "./DialogPostDetail";
 
 import ProfileStory from "./stories/ProfileStory";
 import EducationStory from "./stories/EducationStory";
@@ -59,6 +61,7 @@ const Home = () => {
           <Posts />
 
           <DialogOpenResume />
+          <DialogPostDetail />
         </section>
         {/* =================== Main App =================== */}
 

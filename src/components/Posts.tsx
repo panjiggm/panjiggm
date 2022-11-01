@@ -3,10 +3,14 @@ import { Tab } from "@headlessui/react";
 import { BiUserPin } from "react-icons/bi";
 import { BsGrid3X3 } from "react-icons/bs";
 
+import Post from "./Post";
+
 import group_1 from "../assets/Group_1.png";
 import group_2 from "../assets/Group_2.png";
 import group_3 from "../assets/Group_3.png";
-import Post from "./Post";
+import logo_1 from "../assets/next-byte-logo.png";
+import logo_2 from "../assets/performate-logo.png";
+import logo_3 from "../assets/greencover-logo.png";
 
 const Posts = () => {
   let [categories] = useState([
@@ -15,16 +19,28 @@ const Posts = () => {
       icon: <BsGrid3X3 className="text-lg" />,
       content: [
         {
-          name: "Nextbyte.co",
-          imageSrc: group_1,
-        },
-        {
-          name: "Performate.id",
-          imageSrc: group_2,
-        },
-        {
-          name: "Greencover.co.id",
+          name: "Greencover",
+          address: "https://greencover.co.id",
           imageSrc: group_3,
+          logo: logo_3,
+          description:
+            "Greencover is a skin care product brand from Indonesia, which was founded in 2006. Derived from the word 'green' which is the color of life, it is closely related to nature and energy.",
+        },
+        {
+          name: "Performate",
+          address: "https://performate.id",
+          imageSrc: group_2,
+          logo: logo_2,
+          description:
+            "Performate.id helps improve the performance of your employees, so you can focus on increasing turnover and growing your business",
+        },
+        {
+          name: "Nextbyte",
+          address: "https://nextbyte.co",
+          imageSrc: group_1,
+          logo: logo_1,
+          description:
+            "Unlock Your Coding Skill for Freedom. Become a skilled professional programmer, build your app and collaborate with the team",
         },
       ],
     },
@@ -69,6 +85,9 @@ const Posts = () => {
                           key={i}
                           name={item.name}
                           imageSrc={item.imageSrc}
+                          logo={item.logo}
+                          address={item.address}
+                          description={item.description}
                         />
                       );
                     })}

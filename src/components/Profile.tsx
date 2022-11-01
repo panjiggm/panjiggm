@@ -23,13 +23,13 @@ const Profile = () => {
 
   return (
     <div className="dark:text-white">
-      <div className="flex items-center">
+      <div className="flex items-center justify-between">
         <div className="relative flex flex-col bg-gradient-to-tr from-yellow-400 to-fuchsia-600 p-1 rounded-full cursor-pointer">
           <a
             onClick={() => setOpenProfileStory(true)}
             className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900"
           >
-            <img src={ava} className="w-20 h-20 sm:w-28 sm:h-28" alt="avatar" />
+            <img src={ava} className="w-24 h-24 sm:w-28 sm:h-28" alt="avatar" />
           </a>
           <button className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900">
             <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-2xl sm:text-4xl" />
@@ -37,7 +37,7 @@ const Profile = () => {
         </div>
         <div className="ml-2 sm:ml-8 flex">
           <div className="w-16 sm:w-20 text-center">
-            <h4 className="text-md sm:text-xl">9/10</h4>
+            <h4 className="text-md sm:text-xl">8/10</h4>
             <p className="text-xs sm:text-md">Skills</p>
           </div>
           <div className="w-16 sm:w-20 text-center">
