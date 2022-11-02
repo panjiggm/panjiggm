@@ -101,10 +101,16 @@ const DialogOpenResume = () => {
                           value={inputPassword}
                           onChange={(e) => setInputPassword(e.target.value)}
                           autoComplete="given-name"
-                          className="block w-full flex-1 rounded-none rounded-l-md border-gray-300 focus:border-gray-500 focus:ring-gray-500 sm:text-sm"
+                          className={`block w-full flex-1 rounded-none rounded-l-md border-gray-300 focus:border-gray-500 focus:ring-gray-500 sm:text-sm ${
+                            darkMode
+                              ? "text-gray-100 bg-gray-600"
+                              : "text-gray-600"
+                          }`}
                         />
                         <button
-                          className="inline-flex items-center rounded-r-md border border-l-0 border-gray-300 bg-gray-50 px-3 text-sm text-gray-500"
+                          className={`inline-flex items-center rounded-r-md border border-l-0 border-gray-300 px-3 text-sm text-gray-500 ${
+                            darkMode ? "bg-gray-800" : "bg-gray-50"
+                          }`}
                           onClick={() => setVisible((prev) => !prev)}
                         >
                           {visible ? (

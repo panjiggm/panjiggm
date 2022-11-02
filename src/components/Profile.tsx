@@ -54,10 +54,10 @@ const Profile = () => {
         <h2 className="font-pacifico text-gray-700 dark:text-white font-light text-xl sm:text-2xl">
           Panji Gumelar
         </h2>
-        <h3 className="text-sm sm:text-md text-gray-400">Software Engineer</h3>
+        <h3 className="text-sm sm:text-md text-gray-400">Frontend Engineer</h3>
       </div>
       <p className="pt-1 text-xs">
-        A software engineer based in Tangerang, Indonesia. below are some
+        A frontend engineer based in Tangerang, Indonesia. below are some
         websites that I have worked on, check the posts ⬇️
       </p>
       <div className="my-4 flex justify-between gap-1">
