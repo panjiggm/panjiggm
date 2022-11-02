@@ -23,10 +23,13 @@ const stories = [
               Typescript
             </h3>
             <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
-              JAM Stack & Databases
+              NextJS & JAM Stack
             </h3>
             <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
-              Basic REST API(s) using NodeJS
+              Redux
+            </h3>
+            <h3 className="mt-2 text-sm text-white dark:text-gray-800 px-4 py-1 bg-gray-800 dark:bg-white rounded-lg">
+              Basic REST API(s) using NodeJS & Databases
             </h3>
           </div>
         </div>
