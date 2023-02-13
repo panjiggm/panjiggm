@@ -43,15 +43,13 @@ const DialogPostDetail = () => {
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
               <Dialog.Panel
-                className={`${
-                  !darkMode ? "bg-white" : "bg-gray-900"
-                } relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg`}
+                className={`${!darkMode ? "bg-white" : "bg-gray-900"
+                  } relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg`}
               >
                 <Dialog.Title
                   as="h3"
-                  className={`text-lg font-medium leading-6 ${
-                    darkMode ? "text-white" : "text-gray-900"
-                  }`}
+                  className={`text-lg font-medium leading-6 ${darkMode ? "text-white" : "text-gray-900"
+                    }`}
                 >
                   <div className="p-3">
                     <div className="flex items-center justify-between">
@@ -92,6 +90,11 @@ const DialogPostDetail = () => {
                         {dataPost?.description}
                       </span>
                     </div>
+                    <div className="text-sm mt-2">
+                      <a href={dataPost?.address} target="_blank" className="text-blue-600 underline">
+                        #GoTo{dataPost?.name}
+                      </a>
+                    </div>
                   </div>
                   <hr />
                   <div className="p-3">
@@ -100,20 +103,18 @@ const DialogPostDetail = () => {
                         <FiSmile className="text-xl cursor-pointer opacity-60" />
                         <input
                           placeholder="Add a comment"
-                          className={`text-xs outline-none font-light ${
-                            darkMode
-                              ? "text-gray-100 bg-gray-600"
-                              : "text-gray-600"
-                          } w-full rounded-md p-2`}
+                          className={`text-xs outline-none font-light ${darkMode
+                            ? "text-gray-100 bg-gray-600"
+                            : "text-gray-600"
+                            } w-full rounded-md p-2`}
                           value={comment}
                           onChange={(e) => setComment(e.target.value)}
                         />
                       </div>
 
                       <button
-                        className={`${
-                          comment !== "" ? "text-blue-500" : "text-blue-300"
-                        } text-sm font-semibold`}
+                        className={`${comment !== "" ? "text-blue-500" : "text-blue-300"
+                          } text-sm font-semibold`}
                       >
                         Post
                       </button>

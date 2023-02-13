@@ -8,9 +8,11 @@ import Post from "./Post";
 import group_1 from "../assets/Group_1.png";
 import group_2 from "../assets/Group_2.png";
 import group_3 from "../assets/Group_3.png";
+import group_4 from "../assets/Group_4.png";
 import logo_1 from "../assets/next-byte-logo.png";
 import logo_2 from "../assets/performate-logo.png";
 import logo_3 from "../assets/greencover-logo.png";
+import logo_4 from "../assets/mobekal-logo.png";
 
 const Posts = () => {
   let [categories] = useState([
@@ -18,6 +20,14 @@ const Posts = () => {
       name: "Posts",
       icon: <BsGrid3X3 className="text-lg" />,
       content: [
+        {
+          name: "Mobekal",
+          address: "https://mobekal.vercel.app",
+          imageSrc: group_4,
+          logo: logo_4,
+          description:
+            "Mobekal is a ready-to-eat food product that is packaged in a portable way so it is very easy to carry anywhere, the Mobekal menu is delicious served with rice.",
+        },
         {
           name: "Greencover",
           address: "https://greencover.co.id",
@@ -52,7 +62,7 @@ const Posts = () => {
   }
 
   return (
-    <div className="mt-4">
+    <div className="my-4">
       <div className="w-full max-w-md sm:px-0">
         <Tab.Group>
           <Tab.List className="flex space-x-1 p-1">
