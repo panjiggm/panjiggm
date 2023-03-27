@@ -1,68 +1,82 @@
-import { useState } from "react";
-import { Tab } from "@headlessui/react";
-import { BiUserPin } from "react-icons/bi";
-import { BsGrid3X3 } from "react-icons/bs";
+import { useState } from 'react';
+import { Tab } from '@headlessui/react';
+import { BiUserPin } from 'react-icons/bi';
+import { BsGrid3X3 } from 'react-icons/bs';
 
-import Post from "./Post";
+import Post from './Post';
 
-import group_1 from "../assets/Group_1.png";
-import group_2 from "../assets/Group_2.png";
-import group_3 from "../assets/Group_3.png";
-import group_4 from "../assets/Group_4.png";
-import logo_1 from "../assets/next-byte-logo.png";
-import logo_2 from "../assets/performate-logo.png";
-import logo_3 from "../assets/greencover-logo.png";
-import logo_4 from "../assets/mobekal-logo.png";
+import group_1 from '../assets/Group_1.png';
+import group_2 from '../assets/Group_2.png';
+import group_3 from '../assets/Group_3.png';
+import group_4 from '../assets/Group_4.png';
+import group_5 from '../assets/Group_5.png';
+import logo_1 from '../assets/next-byte-logo.png';
+import logo_2 from '../assets/performate-logo.png';
+import logo_3 from '../assets/greencover-logo.png';
+import logo_4 from '../assets/mobekal-logo.png';
+import logo_5 from '../assets/logo-cybercave.png';
 
 const Posts = () => {
   let [categories] = useState([
     {
-      name: "Posts",
+      name: 'Posts',
       icon: <BsGrid3X3 className="text-lg" />,
       content: [
         {
-          name: "Mobekal",
-          address: "https://mobekal.vercel.app",
+          name: 'Cybercave.id',
+          address: 'https://cybercave.id',
+          imageSrc: group_5,
+          logo: logo_5,
+          description:
+            'Cybercave Indonesia is an IT consultant that focuses on providing solutions for technology needs and business performance management.',
+        },
+        {
+          name: 'Mobekal',
+          address: 'https://mobekal.vercel.app',
           imageSrc: group_4,
           logo: logo_4,
           description:
-            "Mobekal is a ready-to-eat food product that is packaged in a portable way so it is very easy to carry anywhere, the Mobekal menu is delicious served with rice.",
+            'Mobekal is a ready-to-eat food product that is packaged in a portable way so it is very easy to carry anywhere, the Mobekal menu is delicious served with rice.',
         },
         {
-          name: "Greencover",
-          address: "https://greencover.co.id",
+          name: 'Greencover',
+          address: 'https://greencover.co.id',
           imageSrc: group_3,
           logo: logo_3,
           description:
             "Greencover is a skin care product brand from Indonesia, which was founded in 2006. Derived from the word 'green' which is the color of life, it is closely related to nature and energy.",
         },
         {
-          name: "Performate",
-          address: "https://performate.id",
+          name: 'Performate',
+          address: 'https://performate.id',
           imageSrc: group_2,
           logo: logo_2,
           description:
-            "Performate.id helps improve the performance of your employees, so you can focus on increasing turnover and growing your business",
+            'Performate.id helps improve the performance of your employees, so you can focus on increasing turnover and growing your business',
         },
         {
-          name: "Nextbyte",
-          address: "https://nextbyte.co",
+          name: 'Nextbyte',
+          address: 'https://nextbyte.co',
           imageSrc: group_1,
           logo: logo_1,
           description:
-            "Unlock Your Coding Skill for Freedom. Become a skilled professional programmer, build your app and collaborate with the team",
+            'Unlock Your Coding Skill for Freedom. Become a skilled professional programmer, build your app and collaborate with the team',
         },
       ],
     },
-    { name: "Tags", icon: <BiUserPin className="text-2xl" />, content: [] },
+    {
+      name: 'Tags',
+      icon: <BiUserPin className="text-2xl" />,
+      content: [],
+    },
   ]);
 
   function classNames(...classes: any) {
-    return classes.filter(Boolean).join(" ");
+    return classes.filter(Boolean).join(' ');
   }
 
   return (
-    <div className="my-4">
+    <div className="py-4">
       <div className="w-full max-w-md sm:px-0">
         <Tab.Group>
           <Tab.List className="flex space-x-1 p-1">
@@ -71,12 +85,12 @@ const Posts = () => {
                 key={i}
                 className={({ selected }) =>
                   classNames(
-                    "w-full py-2.5 leading-5",
-                    "ring-opacity-60 focus:outline-none",
-                    "flex justify-center",
+                    'w-full py-2.5 leading-5',
+                    'ring-opacity-60 focus:outline-none',
+                    'flex justify-center',
                     selected
-                      ? "shadow border-b-2 border-gray-500 dark:text-gray-100"
-                      : "text-gray-300 dark:text-gray-500"
+                      ? 'shadow border-b-2 border-gray-500 dark:text-gray-100'
+                      : 'text-gray-300 dark:text-gray-500'
                   )
                 }
               >

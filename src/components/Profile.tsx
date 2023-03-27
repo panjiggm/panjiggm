@@ -1,14 +1,14 @@
-import { useContext } from "react";
+import { useContext } from 'react';
 import {
   AiFillTwitterCircle,
   AiFillInstagram,
   AiFillLinkedin,
   AiFillGithub,
   AiFillPlusCircle,
-} from "react-icons/ai";
+} from 'react-icons/ai';
 
-import ava from "../assets/avatar.png";
-import { GlobalContext } from "../context/GlobalContext";
+import ava from '../assets/avatar.png';
+import { GlobalContext } from '../context/GlobalContext';
 
 const LINK_LINKEDIN = `https://www.linkedin.com/in/panjiggm/`;
 const LINK_INSTAGRAM = `https://instagram.com/panjiggm`;
@@ -19,7 +19,7 @@ const Profile = () => {
   const { setOpenProfileStory } = useContext(GlobalContext);
 
   const BTN_SOCMED =
-    "flex items-center justify-center rounded-lg w-full text-white py-2 cursor-pointer";
+    'flex items-center justify-center rounded-lg w-full text-white py-2 cursor-pointer';
 
   return (
     <div className="dark:text-white">
@@ -29,10 +29,18 @@ const Profile = () => {
             onClick={() => setOpenProfileStory(true)}
             className="bg-white p-1 rounded-full transform transition hover:-rotate-6 dark:bg-gray-900"
           >
-            <img src={ava} className="w-24 h-24 sm:w-28 sm:h-28" alt="avatar" />
+            <img
+              src={ava}
+              className="w-24 h-24 sm:w-28 sm:h-28"
+              alt="avatar"
+            />
           </a>
-          <button className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900">
+          <button
+            type="button"
+            className="absolute bottom-0 right-1 bg-white rounded-full dark:bg-gray-900"
+          >
             <AiFillPlusCircle className="text-blue-500 hover:text-blue-600 text-2xl sm:text-4xl" />
+            {''}
           </button>
         </div>
         <div className="ml-2 sm:ml-8 flex">
@@ -54,11 +62,13 @@ const Profile = () => {
         <h2 className="font-pacifico text-gray-700 dark:text-white font-light text-xl sm:text-2xl">
           Panji Gumelar
         </h2>
-        <h3 className="text-sm sm:text-md text-gray-400">Frontend Engineer</h3>
+        <h3 className="text-sm sm:text-md text-gray-400">
+          Software Engineer
+        </h3>
       </div>
       <p className="pt-1 text-xs">
-        A frontend engineer based in Tangerang, Indonesia. below are some
-        websites that I have worked on, check the posts ⬇️
+        A software engineer based in Tangerang, Indonesia. below are
+        some websites that I have worked on, check the posts ⬇️
       </p>
       <div className="my-4 flex justify-between gap-1">
         <a
