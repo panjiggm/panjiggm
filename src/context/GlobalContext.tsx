@@ -4,7 +4,7 @@ import {
   ReactNode,
   SetStateAction,
   useState,
-} from "react";
+} from 'react';
 
 type GlobalContextProviderProps = {
   children: ReactNode;
@@ -16,6 +16,7 @@ type DataPost = {
   logo: string;
   address: string;
   description: string;
+  images: string[];
 };
 
 type GlobalContexType = {
@@ -43,20 +44,29 @@ type GlobalContexType = {
 
 export const GlobalContext = createContext({} as GlobalContexType);
 
-const GlobalContextProvider = ({ children }: GlobalContextProviderProps) => {
+const GlobalContextProvider = ({
+  children,
+}: GlobalContextProviderProps) => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
   // Dialogs
   const [openResume, setOpenResume] = useState<boolean>(false);
-  const [openPostDetail, setOpenPostDetail] = useState<boolean>(false);
+  const [openPostDetail, setOpenPostDetail] =
+    useState<boolean>(false);
 
   // Stories
-  const [openProfileStory, setOpenProfileStory] = useState<boolean>(false);
-  const [openEducationStory, setOpenEducationStory] = useState<boolean>(false);
-  const [openWorkExpStory, setOpenWorkExpStory] = useState<boolean>(false);
-  const [openCareerStory, setOpenCareerStory] = useState<boolean>(false);
-  const [openSkillsStory, setOpenSkillsStory] = useState<boolean>(false);
-  const [openContactStory, setOpenContactStory] = useState<boolean>(false);
+  const [openProfileStory, setOpenProfileStory] =
+    useState<boolean>(false);
+  const [openEducationStory, setOpenEducationStory] =
+    useState<boolean>(false);
+  const [openWorkExpStory, setOpenWorkExpStory] =
+    useState<boolean>(false);
+  const [openCareerStory, setOpenCareerStory] =
+    useState<boolean>(false);
+  const [openSkillsStory, setOpenSkillsStory] =
+    useState<boolean>(false);
+  const [openContactStory, setOpenContactStory] =
+    useState<boolean>(false);
 
   // Datas
   const [dataPost, setDataPost] = useState<DataPost | null>(null);

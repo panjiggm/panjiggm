@@ -8,8 +8,11 @@ import {
   FiMoreHorizontal,
   FiSmile,
 } from 'react-icons/fi';
+import { Slide } from 'react-slideshow-image';
 
 import { GlobalContext } from '../context/GlobalContext';
+
+import 'react-slideshow-image/dist/styles.css';
 
 const DialogPostDetail = () => {
   const { darkMode, openPostDetail, setOpenPostDetail, dataPost } =
@@ -80,10 +83,17 @@ const DialogPostDetail = () => {
                       <FiMoreHorizontal className="text-xl cursor-pointer" />
                     </div>
                   </div>
-                  <img
+                  {/* <img
                     src={dataPost?.imageSrc}
                     alt={dataPost?.name}
-                  />
+                  /> */}
+                  <Slide>
+                    {dataPost?.images.map((image, i) => (
+                      <div key={i} className="each-slide-effect">
+                        <img src={image} alt={dataPost?.name} />
+                      </div>
+                    ))}
+                  </Slide>
                   <div className="p-3">
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
