@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Tab } from '@headlessui/react';
-import { BiUserPin } from 'react-icons/bi';
+import { HiOutlineSquare3Stack3D } from 'react-icons/hi2';
 import { BsGrid3X3 } from 'react-icons/bs';
 
 import Post from './Post';
+import TechStack from './TechStack';
 
 import group_1 from '../assets/Group_1.png';
 import group_2 from '../assets/Group_2.png';
@@ -24,7 +25,7 @@ import logo_5 from '../assets/logo-cybercave.png';
 const Posts = () => {
   let [categories] = useState([
     {
-      name: 'Posts',
+      name: 'Portfolio',
       icon: <BsGrid3X3 className="text-lg" />,
       content: [
         {
@@ -75,8 +76,8 @@ const Posts = () => {
       ],
     },
     {
-      name: 'Tags',
-      icon: <BiUserPin className="text-2xl" />,
+      name: 'Tech Stack',
+      icon: <HiOutlineSquare3Stack3D className="text-2xl" />,
       content: [],
     },
   ]);
@@ -104,7 +105,8 @@ const Posts = () => {
                   )
                 }
               >
-                {category.icon}
+                <span>{category.icon}</span>
+                <span className="ml-2">{category.name}</span>
               </Tab>
             ))}
           </Tab.List>
@@ -128,11 +130,7 @@ const Posts = () => {
                     })}
                   </div>
                 ) : (
-                  <div className="mt-16 flex justify-center items-center w-full">
-                    <h3 className="text-md text-gray-700 dark:text-gray-200">
-                      No tagged post(s) 😔
-                    </h3>
-                  </div>
+                  <TechStack />
                 )}
               </Tab.Panel>
             ))}
