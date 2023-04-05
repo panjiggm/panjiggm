@@ -125,7 +125,7 @@ const Posts = () => {
                 }
               >
                 <span>{category.icon}</span>
-                <span className="ml-2">{category.name}</span>
+                <span className="ml-2 text-sm">{category.name}</span>
               </Tab>
             ))}
           </Tab.List>
