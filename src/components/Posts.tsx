@@ -12,6 +12,7 @@ import group_2 from '../assets/Group_2.png';
 import group_3 from '../assets/Group_3.png';
 import group_4 from '../assets/Group_4.png';
 import group_5 from '../assets/Group_5.png';
+import group_6 from '../assets/Group_6.png';
 import group_1_1 from '../assets/Group_1-1.png';
 import group_2_1 from '../assets/Group_2-1.png';
 import group_3_1 from '../assets/Group_3-1.png';
@@ -22,6 +23,7 @@ import logo_2 from '../assets/performate-logo.png';
 import logo_3 from '../assets/greencover-logo.png';
 import logo_4 from '../assets/mobekal-logo.png';
 import logo_5 from '../assets/logo-cybercave.png';
+import logo_6 from '../assets/sushiman-logo.png';
 import { useState } from 'react';
 
 const categories = [
@@ -29,6 +31,15 @@ const categories = [
     name: 'Portfolio',
     icon: <BsGrid3X3 className="text-lg" />,
     content: [
+      {
+        name: 'Sushiman',
+        address: 'https://sushiman-eight.vercel.app/',
+        imageSrc: group_6,
+        images: [group_6],
+        logo: logo_6,
+        description:
+          'Sushiman is slicing project landing page website using HTML & CSS',
+      },
       {
         name: 'Cybercave.id',
         address: 'https://cybercave.id',
